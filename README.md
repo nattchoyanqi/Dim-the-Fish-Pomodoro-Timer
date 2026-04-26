@@ -15,7 +15,7 @@ A cozy, animated Pomodoro timer featuring **Mr. Dim**, a fish who reacts to your
 * **Pixel Art Aesthetic:** Clean, soft UI designed for a calm working environment.
 
 ## Live Demo
-You can use the timer here: [(https://nattchoyanqi.github.io/Dim-the-Fish-Pomodoro-Timer/)]
+https://nattchoyanqi.github.io/Dim-the-Fish-Pomodoro-Timer/
 
 ## Built With
 * **HTML5** - Structure and layout.
