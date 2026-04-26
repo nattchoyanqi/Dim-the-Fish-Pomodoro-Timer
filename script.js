@@ -87,7 +87,7 @@
             statusMsgEl.innerHTML = "⏸ Paused · Mr. Dim is waiting";
         } 
         else if (isActive) {
-            if (currentMode === "pomodoro") statusMsgEl.innerHTML = "🍅 Mr.Dim is cheering on you!";
+            if (currentMode === "pomodoro") statusMsgEl.innerHTML = "Mr.Dim is cheering on you!";
             else statusMsgEl.innerHTML = "🌿 Time to recharge!";
         }
     }
