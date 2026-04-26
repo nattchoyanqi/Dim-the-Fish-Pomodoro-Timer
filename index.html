@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title> Dim the Fish Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/fishNormal1.jpeg">
+</head>
+<body>
+
+<div class="timer-dashboard">
+    <h1>
+        ~Dim the Fish Pomodoro Timer~
+    </h1>
+    
+    <div class="mode-switch">
+        <button class="mode-btn" data-mode="pomodoro">Focus</button>
+        <button class="mode-btn" data-mode="shortBreak">Short Break</button>
+        <button class="mode-btn" data-mode="longBreak">Long Break</button>
+    </div>
+
+    <div class="split-layout">
+        <div class="timer-area">
+            <div id="timerDisplay">25:00</div>
+            <div class="timer-label" id="sessionLabel">🐟 Study Mode</div>
+            
+            <div class="controls">
+                <button class="ctrl-btn start-btn" id="startBtn">▶ Start</button>
+                <button class="ctrl-btn stop-btn" id="pauseBtn">⏸ Pause</button>
+                <button class="ctrl-btn reset-btn" id="resetBtn">⟳ Reset</button>
+            </div>
+
+            <div class="status-area" id="statusMsg">
+                Ready to focus with Mr.Dim?
+            </div>
+            <div class="session-counter" id="sessionCounterDisplay">
+                📋 Completed Pomodoros: 0
+            </div>
+            <progress id="timerProgress" value="0" max="100"></progress>
+        </div>
+
+        <div class="picture-area">
+            <div class="fish-card">
+			<div class="fish-image-placeholder">
+				 <img id="fishImage" alt="Fish Normal 1" src="images/fishNormal1.jpeg">
+				 
+				 </div>       
+			<div class="fish-caption" id="fishCaption">✨ focus with Mr.Dim ✨</div>
+            </div>
+        </div>
+    </div>
+    <footer>🐟 Stay focused, stay calm · Work 25min → break 5min → long break every 4 cycles</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
