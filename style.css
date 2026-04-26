@@ -1,6 +1,6 @@
 ﻿* {
-    margin: 0;
-    padding: 0;
+    margin: 0; /*Browsers add their own default margins to headers and lists. Setting these to zero prevents unexpected gaps in your layout*/
+    padding: 0; /*Removes the default outer spacing around elements*/
     box-sizing: border-box;
     user-select: none;
 }
