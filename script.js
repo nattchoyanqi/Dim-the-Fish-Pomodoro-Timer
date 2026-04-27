@@ -128,18 +128,25 @@
         }
         isActive = false;
 
-        // --- PLAY SOUND HERE ---
-    alarmSound.play().catch(error => {
-        console.log("Audio playback failed:", error);
-    });
+        alarmSound.currentTime = 0; // Start from the beginning
+        alarmSound.loop = true;     // Ensure it keeps playing if the file is short
+        alarmSound.play().catch(error => {
+            console.log("Audio playback failed:", error);
+        });
+
+        // This tells the browser: "Wait 6 seconds, then stop the sound"
+        setTimeout(() => {
+            alarmSound.pause();
+            alarmSound.currentTime = 0; 
+        }, 6000); 
         
         if (currentMode === "pomodoro") {
             completedPomodoros++;
             pomodoroCycleCount++;
-            currentMood = fishMoods.happy; // Happy when finished
+            currentMood = fishMoods.happy;
             if (pomodoroCycleCount % 4 === 0) switchMode("longBreak", true);
-            else switchMode("shortBreak", true);} 
-        else {
+            else switchMode("shortBreak", true);
+        } else {
             currentMood = fishMoods.normal;
             switchMode("pomodoro", true);
         }
