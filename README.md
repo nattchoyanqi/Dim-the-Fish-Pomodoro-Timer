@@ -34,4 +34,15 @@ https://nattchoyanqi.github.io/Dim-the-Fish-Pomodoro-Timer/
 ├── index.html      # Main structure
 ├── style.css       # Visual styling and layout
 ├── script.js       # Timer and mood logic
-└── images/         # Mr. Dim's mood assets (.jpeg files)
+├── images/         # Mr. Dim's mood assets (.jpeg files)
+   ├── fishExcited1.jpeg
+   ├── fishExcited2.jpeg
+   ├── fishHappy1.jpeg
+   ├── fishHappy2.jpeg
+   ├── fishNormal1.jpeg
+   ├── fishNormal2.jpeg
+   ├── fishSad.jpeg
+   ├── fishSleep1.jpeg
+   └── fishSleep2.jpeg
+└── sounds/         # Sound assets (.mp3 files)
+   └── notification.mp3
