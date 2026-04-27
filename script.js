@@ -7,7 +7,7 @@
 
     let currentMode = "pomodoro";
     let timeLeft = DURATIONS.pomodoro;
-    let endTime = null; // NEW: Stores the exact finish time
+    let endTime = null; 
     let timerInterval = null;
     let isActive = false;
     let completedPomodoros = 0;
