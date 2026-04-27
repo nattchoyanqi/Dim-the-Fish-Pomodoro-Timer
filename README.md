@@ -1,4 +1,4 @@
-# dim the fish pomodoro timer
+# 🐠 Dim the Fish Pomodoro Timer
 
 A cozy, animated Pomodoro timer featuring **Mr. Dim**, a fish who reacts to your productivity! This web-based tool helps you stay focused using the Pomodoro technique (25 minutes of work followed by short and long breaks).
 
