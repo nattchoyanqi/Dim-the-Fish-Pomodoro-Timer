@@ -21,7 +21,8 @@
     const timerProgress = document.getElementById("timerProgress");
     const sessionLabel = document.getElementById("sessionLabel");
     const modeBtns = document.querySelectorAll(".mode-btn");
-    const fishDisplay = document.getElementById("fishImage"); // Added this reference
+    const fishDisplay = document.getElementById("fishImage"); 
+    const alarmSound = new Audio('sounds/notification.mp3'); 
 
     const fishMoods = {
         excited: [
@@ -74,7 +75,7 @@
         } else if (currentMode === "shortBreak") {
             sessionLabel.textContent = "🌿 Short Break · Rest your eyes";
         } else {
-            sessionLabel.textContent = "🧘 Long Break · Stretch & breathe";
+            sessionLabel.textContent = "🧘 Long Break · Stretch & breathe. Snacks perhaps?";
         }
     }
 
@@ -126,14 +127,19 @@
             timerInterval = null;
         }
         isActive = false;
+
+        // --- PLAY SOUND HERE ---
+    alarmSound.play().catch(error => {
+        console.log("Audio playback failed:", error);
+    });
         
         if (currentMode === "pomodoro") {
             completedPomodoros++;
             pomodoroCycleCount++;
             currentMood = fishMoods.happy; // Happy when finished
             if (pomodoroCycleCount % 4 === 0) switchMode("longBreak", true);
-            else switchMode("shortBreak", true);
-        } else {
+            else switchMode("shortBreak", true);} 
+        else {
             currentMood = fishMoods.normal;
             switchMode("pomodoro", true);
         }
