@@ -10,9 +10,16 @@ A cozy, animated Pomodoro timer featuring **Mr. Dim**, a fish who reacts to your
     * **Sleepy:** When the timer is paused.
     * **Happy:** When you finish a session or take a break.
     * **Sad:** When the focus session is almost over.
+* **Notification Sound:** To remind that you have finish one session and it's time for break.
 * **Automatic Cycles:** Tracks your progress and automatically switches between Focus, Short Breaks, and Long Breaks.
 * **Progress Bar:** A visual indicator of how much time is left in your current session.
 * **Pixel Art Aesthetic:** Clean, soft UI designed for a calm working environment.
+
+## How to Use
+1. **Focus:** Click **Start** to begin a 25-minute study session. Mr. Dim will cheer you on!
+2. **Short Break:** After one session, Mr. Dim gets happy and you get a 5-minute break.
+3. **Long Break:** After 4 focus sessions, enjoy a 15-minute break.
+4. **Pause:** If you need to step away, Mr. Dim will take a nap until you return.
 
 ## Live Demo
 https://nattchoyanqi.github.io/Dim-the-Fish-Pomodoro-Timer/
